@@ -8,11 +8,12 @@ body {
     color: #f3f3f3;
     line-height: 1.6;
     background-color: #020202;
-    background-image: url("./octagon_grid.png"),
-    radial-gradient(1000px 700px at 18% 24%, rgba(175, 39, 39, 0.6), rgba(199, 46, 46, 0)),
-    radial-gradient(880px 640px at 70% 20%, rgba(129, 129, 129, 0.55), rgba(150, 150, 150, 0));
+    background-image:
+        url("./octagon_grid.png"),
+        radial-gradient(1100px 760px at 16% 20%, rgba(175, 39, 39, 0.7), rgba(199, 46, 46, 0)),
+        radial-gradient(940px 700px at 66% 18%, rgba(129, 129, 129, 0.7), rgba(150, 150, 150, 0));
     background-repeat: repeat, no-repeat, no-repeat;
-    background-size: 360px 360px, 100% 100%, 100% 100%;
+    background-size: 460px 361px, 100% 100%, 100% 100%;
     background-attachment: fixed;
     background-blend-mode: multiply, normal, normal;
 }
