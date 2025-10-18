@@ -8,18 +8,17 @@ body {
     color: #f3f3f3;
     line-height: 1.6;
     background-color: #020202;
-    background-image:
-        url("./octagon_grid.png"),
-        radial-gradient(1100px 760px at 16% 20%, rgba(175, 39, 39, 0.7), rgba(199, 46, 46, 0)),
-        radial-gradient(940px 700px at 66% 18%, rgba(129, 129, 129, 0.7), rgba(150, 150, 150, 0));
+    background-image: url("./octagon_grid.png"),
+    radial-gradient(1000px 700px at 18% 24%, rgba(175, 39, 39, 0.6), rgba(199, 46, 46, 0)),
+    radial-gradient(880px 640px at 70% 20%, rgba(129, 129, 129, 0.55), rgba(150, 150, 150, 0));
     background-repeat: repeat, no-repeat, no-repeat;
-    background-size: 460px 361px, 100% 100%, 100% 100%;
+    background-size: 360px 360px, 100% 100%, 100% 100%;
     background-attachment: fixed;
     background-blend-mode: multiply, normal, normal;
 }
 
 .wrap {
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 24px 20px;
 }
@@ -43,12 +42,9 @@ body {
 }
 
 .site-nav {
-    position: sticky;
-    top: 12px;
-    background: rgba(15, 15, 15, 0.65);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 8px 12px;
+    background: rgba(15, 15, 15, 0.5);
+    border-radius: 10px;
+    padding: 8px 10px;
 }
 
 .nav-list {
@@ -66,14 +62,13 @@ body {
     padding: 6px 12px;
     color: #f3f3f3;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
 }
 
 .nav-list a:hover,
 .nav-list a:focus-visible {
-    background-color: rgba(199, 46, 46, 0.8);
-    transform: translateY(-1px);
+    background-color: rgba(199, 46, 46, 0.75);
 }
 
 .section {
@@ -93,17 +88,17 @@ body {
     display: block;
     width: 100%;
     height: 3px;
-    margin-top: 8px;
-    background: linear-gradient(90deg, rgba(199, 46, 46, 0.9), rgba(205, 205, 205, 0.8), rgba(199, 46, 46, 0.9));
+    margin-top: 6px;
+    background: rgba(199, 46, 46, 0.6);
 }
 
 .hero-img {
     width: 100%;
-    max-width: 420px;
+    max-width: 380px;
     display: block;
     margin: 0 auto 12px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 .hero-caption {
@@ -119,9 +114,9 @@ body {
     border-collapse: collapse;
     background: rgba(10, 10, 10, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .info-table caption {
@@ -161,9 +156,9 @@ body {
 
 .skills-list li {
     padding: 14px;
-    background: rgba(15, 15, 15, 0.6);
+    background: rgba(15, 15, 15, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .skills-list strong {
@@ -180,11 +175,11 @@ body {
 .quote {
     position: relative;
     margin: 0;
-    padding: 18px 18px 18px 52px;
-    background: rgba(15, 15, 15, 0.6);
+    padding: 18px 18px 18px 48px;
+    background: rgba(15, 15, 15, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .quote::before {
@@ -208,92 +203,42 @@ body {
 
 .media-video {
     width: 100%;
-    max-width: 720px;
+    max-width: 660px;
     border-radius: 12px;
     background: #000000;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
-    margin: 0 auto 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.65);
+    margin: 0 auto 16px;
     display: block;
 }
 
 .media-audio {
     width: 100%;
-    max-width: 720px;
-    margin: 0 auto 18px;
+    max-width: 660px;
+    margin: 0 auto 16px;
     display: block;
     border-radius: 12px;
     background: #000000;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .gallery {
     display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .gallery img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    height: auto;
     display: block;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.02);
-}
-
-.contact-form {
-    background: rgba(15, 15, 15, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    padding: 18px;
-    max-width: 620px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 14px;
-    font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin-top: 6px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: #1a1a1a;
-    color: #f3f3f3;
-}
-
-.contact-form input:focus-visible,
-.contact-form textarea:focus-visible {
-    border-color: rgba(199, 46, 46, 0.9);
-    outline: none;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px;
-    border: 0;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(199, 46, 46, 0.95), rgba(122, 15, 15, 0.95));
-    color: #ffffff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: filter 0.2s ease;
-}
-
-.btn:hover,
-.btn:focus-visible {
-    filter: brightness(1.1);
 }
 
 .site-footer {
@@ -334,6 +279,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 .fights-list {
     list-style: none;
     margin: 0;
@@ -353,12 +299,4 @@ body {
     display: block;
     color: #f7d6d6;
     margin-bottom: 4px;
-}
-
-.section-contact .section-title {
-    text-align: center;
-}
-
-.section-contact .section-title::after {
-    margin-left: 0;
 }
