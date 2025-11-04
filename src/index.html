@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Боец UFC Джон Джонс">
+    <title>Jon “Bones” Jones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<header class="wrap site-header" id="top">
+    <h1 class="site-title">JON “BONES” JONES</h1>
+    <p class="site-subtitle">Чемпион UFC в полутяжёлом и тяжёлом весе</p>
+    <nav class="site-nav">
+        <ul class="nav-list">
+            <li><a href="#bio">Биография</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#stats">Рекорд</a></li>
+            <li><a href="#fights">Бои</a></li>
+            <li><a href="#quotes">Цитаты</a></li>
+            <li><a href="#media">Медиа</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="wrap">
+    <article>
+        <section id="bio" class="section">
+            <h2 class="section-title">Досье бойца</h2>
+            <figure class="hero-figure">
+                <img class="hero-img" src="jon-jones.webp" alt="Джон Джонс в бою">
+                <figcaption class="hero-caption">Один из самых доминирующих чемпионов UFC, собрав титулы в полутяжёлом и тяжёлом дивизионах.</figcaption>
+            </figure>
+            <table class="info-table">
+                <caption>Основные параметры</caption>
+                <thead>
+                <tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Рост</td><td>193 см</td></tr>
+                <tr><td>Размах рук</td><td>215 см</td></tr>
+                <tr><td>Категория</td><td>Полутяжёлый / Тяжёлый вес</td></tr>
+                <tr><td>Стойка</td><td>Ортодоксальная</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="skills" class="section">
+            <h2 class="section-title">Ключевые навыки</h2>
+            <ul class="skills-list">
+                <li><strong>Контроль дистанции.</strong> Длинные руки и работа ногами сдерживают соперников.</li>
+                <li><strong>Борьба у клетки.</strong> Хорошо контролирует клинч и умеет переводить в партер.</li>
+                <li><strong>Граунд-энд-паунд.</strong> Наносит много разрезающих ударов сверху.</li>
+                <li><strong>План на бой.</strong> Подстраивается под стиль оппонента во время поединка.</li>
+            </ul>
+        </section>
+        <section id="stats" class="section">
+            <h2 class="section-title">Рекорд в UFC</h2>
+            <table class="stat-table">
+                <tbody>
+                <tr><th scope="row">Победы</th><td>27</td></tr>
+                <tr><th scope="row">Поражения</th><td>1 (за запрещённый приём)</td></tr>
+                <tr><th scope="row">Ничьи</th><td>0</td></tr>
+                <tr><th scope="row">NC</th><td>1</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="fact" class="section">
+            <h2 class="section-title">Интересный факт</h2>
+            <aside class="fact-box">
+                <p>19&nbsp;<time datetime="2011-03-19">марта 2011</time> Джонс стал самым молодым чемпионом UFC в истории, забрав пояс у Маурисиу «Шогуна» Руа.</p>
+            </aside>
+        </section>
+        <details class="prep-note">
+            <summary>Как проходит неделя подготовки</summary>
+            <p>Утренний спарринг по вторникам, борьба и контроль у сетки по средам, разбор соперника и визуализация вечером. Перед боем — лёгкий кикбоксинг и растяжка.</p>
+        </details>
+        <section id="fights" class="section">
+            <h2 class="section-title">Легендарные бои</h2>
+            <ul class="fights-list">
+                <li><strong>vs. Маурисиу “Шогун” Руа (UFC 128):</strong> завоевал титул полутяжёлого веса, доминируя весь бой.</li>
+                <li><strong>vs. Александр Густафссон (UFC 165):</strong> тяжёлый пятираундовый поединок, который многие называют лучшим в карьере.</li>
+                <li><strong>vs. Дэниел Кормье (UFC 214):</strong> зрелищный реванш с жёстким завершением и ярким послевкусием.</li>
+                <li><strong>vs. Сирил Ган (UFC 285):</strong> вернулся после перерыва, задушил соперника в первом раунде и взял пояс тяжёлого веса.</li>
+            </ul>
+        </section>
+        <section id="quotes" class="section">
+            <h2 class="section-title">Цитаты</h2>
+            <div class="quotes">
+                <blockquote class="quote"><p>“Fighting is not what I do - it's who I am. It's what I was meant to do, what I was meant to be. I knew that right after my first MMA practice.”</p></blockquote>
+                <blockquote class="quote"><p>“I take it so seriously as far as meditation, notes, visualization, preparation, everything. I take it a lot more serious than a lot of people that play this sport. I’m obsessed with the game that I play.”</p></blockquote>
+                <blockquote class="quote"><p>“I’m beating all the weakness out of myself, beating all the give-up out of myself, I’m beating the lack of cardio, I’m beating the lack of confidence – any sign of weakness that’s in my heart, I’m getting rid of it.”</p></blockquote>
+            </div>
+        </section>
+    </article>
+    <section id="media" class="section">
+        <h2 class="section-title">Медиа</h2>
+        <video class="media-video" controls>
+            <source src="jones-highlights.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <audio class="media-audio" controls>
+            <source src="jones-interview.m4a" type="audio/mp4">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        <div class="gallery">
+            <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/gettyimages-jon_jones-ufc214-7d85a6af-ae00-40c2-8ec8-f24a8ea2dde8.jpg?w=1600&h=900&crop=1" alt="Джонс празднует победу">
+            <img src="https://legacymedia.sportsplatform.io/image/upload/v1677776839/csuer4lkwjgfzxutijrv.jpg" alt="Работа у сетки">
+            <img src="https://www.reviewjournal.com/wp-content/uploads/2025/06/20592665_web1_JonJones.jpg" alt="Чемпионский пояс">
+        </div>
+    </section>
+</main>
+<footer class="wrap site-footer">
+    <p class="footer-text">Связаться: <a href="mailto:Marketing@jonnybones.com">Marketing@jonnybones.com</a></p>
+    <p class="footer-text"><a href="https://x.com/jonnybones" target="_blank" rel="noopener noreferrer">X: @jonnybones</a> · <a class="to-top" href="#top">Наверх</a></p>
+</footer>
 </body>
 </html>
